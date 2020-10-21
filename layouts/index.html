@@ -23,11 +23,16 @@
 
     <nav role="navigation" class="flex-container" id="splash">
 
+        <h1>Welcome to <b><code>hayjay.us</code></b>! 👋</h1>
+        <h3>Hayley + AJ</h3>
+        <br><br>
         {{ if .Site.Params.mainMenu }}
         {{ range .Site.Params.mainMenu }}
             <a href="{{.link}}" class="big-link">
                 {{.text}}
             </a>
+            <p><i>{{.detail}}</i></p>
+            <br>
         {{ end }}
 
         {{ else }}
